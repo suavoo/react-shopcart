@@ -1,38 +1,159 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Title {
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+@media (min-width: 750px) {
+  .Container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1%;
+  background-color: #0daf6f;
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: +1;
 }
 
-.App-link {
-  color: #61dafb;
+.CartButton {
+  background-color: #fca62a;
+  color: white;
+  border-radius: 5px;
+  border: solid 1px #fca62a;
+  cursor: pointer;
+  margin: 1%;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.ProductCard {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: white;
+  margin: 2%;
+  cursor: pointer;
+}
+.ProductInteractive {
+  display: flex;
+  flex-direction: column;
+}
+
+.CardImage {
+  width: 250px;
+  height: 300px;
+  margin-top: 3%;
+  margin-left: 50px;
+}
+
+.Add {
+  margin: 3%;
+  padding: 3%;
+}
+
+.ProductDetailsCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 5px;
+  background-color: white;
+  overflow: hidden;
+  margin: 2%;
+}
+
+.DetailsDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2%;
+}
+
+@media (min-width: 750px) {
+  .DetailsDiv {
+    flex-direction: row;
   }
 }
+
+.Description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  height: 300px;
+}
+
+.CartDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2%
+}
+
+.CartTotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.CheckoutButton {
+  background-color: #fca62a;
+  color: white;
+  border-radius: 5px;
+  border: solid 1px #fca62a;
+  cursor: pointer;
+  margin: 1%;
+  padding: 2%;
+  font-weight: bold;
+}
+
+.CartProduct {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  border: 0.5px solid grey;
+  border-radius: 3px;
+  margin-top: 1%;
+}
+
+.CartImg {
+  width: 80px;
+  height: 50px;
+  margin-top: 1%;
+}
+
+.IncreaseDecrease {
+  display: flex;
+  border-radius: 2px;
+  height: 20px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.PlusMinusButton {
+  background-color: #fca62a;
+  color: white;
+  font-weight: bold;
+  border: 0.5px solid white;
+  width: 25px;
+}
+
